@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="Booking.jsf" id="d1">
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1"
+                    >
+                <f:facet name="center">
+                    <af:panelGridLayout id="pgl1">
+                        <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr1"
+                                   />
+                      <af:gridRow marginTop="5px"  height="auto" marginBottom="5px" id="gr2"
+                                   >
+                            <af:gridCell marginStart="5px" width="50%" id="gc1">
+                                <af:outputFormatted value="Booking" id="EnrollmentTitle"
+                                                    inlineStyle="background-clip:border-box; font-size:x-large;"/>
+                                <af:panelFormLayout id="pfl1" 
+                                                    fieldWidth="500">
+                                    <af:inputText label="Flyer Number" id="flyerNumber"/>
+                                    <af:inputText label="First Name" id="firstName"/>
+                                    <af:inputText label="Last Name" id="lastName"/>
+                                    <af:group id="g1">
+                                        <af:selectBooleanRadio text="Credit Card" label="Payment Method" id="sbr1"
+                                                               inlineStyle="grid-column-align:start;"/>
+                                     
+                                    </af:group>
+                                    <af:selectOneChoice label="Card Type" id="soc1"
+                                                        inlineStyle="flex-item-align:start; flex-align:start; page-break-after:avoid; page-break-before:avoid; page-break-inside:avoid; position:relative;">
+                                        <af:selectItem label="Master Card" value="MC" id="si2"/>
+                                        <af:selectItem label="Visa" value="Visa" id="si3"/>
+                                    </af:selectOneChoice>
+                                    <af:inputText label="Card Number" id="CardNumber" columns="50"/>
+                                    <af:inputText label="E-mail" id="email"
+                                                  inlineStyle="grid-column-sizing:min-content;"/>
+                                    <af:button text="Submit" id="submit"/>
+                                </af:panelFormLayout>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                </f:facet>
+                
+            </af:pageTemplate>
+            
+            <f:facet name="header"/>
+            <f:facet name="end"/>
+            <f:facet name="start"/>
+            <f:facet name="branding"/>
+            <f:facet name="copyright"/>
+            <f:facet name="status"/>
+       
+        </af:form>
+        <script type="text/javascript" src="resources/js/Booking.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    </af:document>
+
+
+</f:view>

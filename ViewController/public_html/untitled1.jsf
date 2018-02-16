@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="untitled1.jsf" id="d1">
+    
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/ui/pattern/dynamicShell/dynamicTabShell.jspx" value="#{bindings.ptb1}"
+                             id="pt1">
+                <f:facet name="copyright"/>
+                <f:facet name="about"/>
+                <f:facet name="navigation">
+                    <af:button text="Log In" id="b1"/>
+                     <af:button text="Register" id="b2"/>
+                      <af:button text="My Account" id="b3"/>
+                       <af:button text="Flight Search" id="b4"/>
+                        <af:button text="Flight Status" id="b5"/>
+                         <af:button text="Contact Us" id="b6"/>
+                         <af:button text="Reserve Seat" id="bb"/>
+                          <af:button text="Log Out" id="b7"/>
+                       <!--    <af:button text="Login" id="b8"/>-->
+                </f:facet>
+                <f:facet name="globalLinks"/>
+                <f:facet name="status"/>
+                <f:facet name="globalToolbar"/>
+                <f:facet name="globalSearch"/>
+                <f:facet name="globalTabs"/>
+                <f:facet name="welcome"/>
+                <f:facet name="innerToolbar"/>
+            </af:pageTemplate>
+        </af:form>
+        <script type="text/javascript" src="resources/js/common.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/UserList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/UserBooking.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/SeatList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/Seat.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/FlightList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/Flight.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/BookingList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        
+        <script type="text/javascript" src="resources/js/common.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/flightData.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+        <script type="text/javascript" src="resources/js/Home.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    </af:document>
+</f:view>

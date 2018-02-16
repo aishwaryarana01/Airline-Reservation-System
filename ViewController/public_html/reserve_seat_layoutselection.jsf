@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="reserve_seat_layoutselection.jsf" id="d1">
+    <div style="font-size:18px; margin-top: 30px; margin-left:  50px;">
+                <p>Your booked flight details are</p>
+            </div>
+            <table xmlns="http://www.w3.org/1999/xhtml" style="margin:auto; width:80%; height:40px;" >
+                <tr style="padding:20px;">
+                    <th>
+                        Booking#
+                    </th>
+                    <th>
+                        Flight#   
+                    </th>
+                    <th>
+                        Source  
+                    </th>
+                    <th>
+                        Destination 
+                    </th>
+                    <th>
+                        Departure  
+                    </th>
+                    <th>
+                        No. of Passengers  
+                    </th>
+                    <th>
+                        Reserved Seat  
+                    </th>
+                </tr><tr style="padding:20px;">
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                </tr>
+                <tr style="padding:20px;">
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                    <td>
+                     
+                </td>
+                </tr>
+            </table>
+            <af:form id="f1">
+                <div style="margin-top:100px;margin-left:30px;">
+                    <div>
+                        <table style="margin:auto; border-spacing:20px;">
+                        <tbody> 
+                        <tr><td>Available Seats <af:selectBooleanCheckbox label=" " id="sbc1" disabled="true"/></td> 
+                        <td>Reserved Seats <af:selectBooleanCheckbox label=" " id="sbc2" disabled="true" selected="true"
+                                                             contentStyle="border:Red solid thin !important ;"/></td>
+                        <td>Your Selection<af:selectBooleanCheckbox label=" " id="sbc3" disabled="true" selected="true"/></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <table style="margin:auto; border-spacing: 30px;">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <af:selectBooleanCheckbox label="1A" id="seat_1a"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="1B" id="seat_1b"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="1C" id="seat_1c"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="1D" id="seat_1d"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <af:selectBooleanCheckbox label="2A" id="seat_2a"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="2B" id="seat_2b"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="2C" id="seat_2c"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="2D" id="seat_2d"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <af:selectBooleanCheckbox label="3A" id="seat31a"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="3B" id="seat_3b"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="3C" id="seat_3c"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="3D" id="seat_3d"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <af:selectBooleanCheckbox label="4A" id="seat_4a"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="4B" id="seat_4b"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="4C" id="seat_4c"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="4D" id="seat_4d"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <af:selectBooleanCheckbox label="5A" id="seat_5a"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="5B" id="seat_5b"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="5C" id="seat_5c"/>
+                            </td>
+                            <td>
+                                <af:selectBooleanCheckbox label="5D" id="seat_5d"/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-left:65%;"><af:button text="Reserve" id="b1"/></div>
+        </af:form>            
+
+    </af:document>
+    <script type="text/javascript" src="resources/js/rs.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+</f:view>

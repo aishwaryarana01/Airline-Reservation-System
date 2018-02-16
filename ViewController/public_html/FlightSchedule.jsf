@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="FlightSchedule.jsf" id="d1">
+        <af:form id="f1">
+            <af:outputFormatted value="Flight Schedules" id="flightScheduleText"
+                                inlineStyle="background-clip:border-box; font-size:x-large;"/>
+            <table style="padding-left:40px">
+                <tr>
+                    <td>
+                        <af:inputText label="Departure City" id="departureCity" value=" "/>
+                    </td>
+                    <td> </td>
+                    <td>
+                        <af:inputText label="Arrival City" id="arrivalCity" value=" "/>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        <af:inputDate label="Departure Date" id="departureDate" value=" "/>
+                    </td>
+                    <td> </td>
+                    <td>
+                        <af:inputDate label="Return Date" id="returnDate" value=" "/>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        <af:inputText label="Time" id="it1" value=" " inlineStyle="width:40px">
+                            <f:convertDateTime type="time"></f:convertDateTime>
+                        </af:inputText>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        <af:button text="Search" id="search" selected="true" action="{showFlightTable()}"/>
+                    </td>
+                </tr>
+            </table>
+            <div> </div>
+            <div id="grid" style="display:none">
+                <table style="padding-left:40px">
+                    <tr>
+                        <td>
+                            <b>Flight Schedules</b>
+                        </td>
+                    </tr>
+                     <tr>
+                    <td>
+                            <table xmlns="http://www.w3.org/1999/xhtml"  border="1" id="table1">
+                                <tr>
+                                    <th>
+                                         Flight Number
+                                    </th>
+                                    <th>
+                                         Departure City
+                                    </th>
+                                    <th>
+                                         Departure Date
+                                    </th>
+                                    <th>
+                                         Departure Time
+                                    </th>
+                                    <th>
+                                         Arrival City
+                                    </th>
+                                                                        <th>
+                                         Arrival Date
+                                    </th>
+                                    <th>
+                                         Arrival Time
+                                    </th>
+                                    <th>
+                                         Seats Available
+                                    </th>
+                                    <th>
+                                         
+                                    </th>
+                                </tr>
+                               </table>
+                        </td> 
+                    </tr>
+                </table>
+                
+            </div>
+             <script type="text/javascript" src="resources/js/FlightSchedule.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/common.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+
+                <script type="text/javascript" src="resources/js/UserList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/UserBooking.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/SeatList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/Seat.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/FlightList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/Flight.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script type="text/javascript" src="resources/js/BookingList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+   
+        </af:form>
+            
+            
+
+    </af:document>
+    </f:view>

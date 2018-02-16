@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="Enrollment.jsf" id="d1">
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1">
+                <f:facet name="center">
+                    <af:panelGridLayout id="pgl1">
+                        <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr1">
+                            <af:gridCell marginStart="5px" width="50%" id="gc1">
+                                <af:outputFormatted value="Enrollment" id="EnrollmentTitle"
+                                                    inlineStyle="background-clip:border-box; font-size:x-large;"/>
+                                <af:panelFormLayout id="pfl1" fieldWidth="500">
+                                    <af:inputText label="First Name" id="firstName" required="true"/>
+                                    <af:inputText label="Middle Initial" id="it3" columns="2"/>
+                                    <af:inputText label="Last Name" id="lastName" required="true"/>
+                                    <af:inputText label="Phone Number" id="phone" columns="15" rows="1"
+                                                  required="true"/>
+                                    <af:inputText label="E-mail" id="email" required="true"/>
+                                    <af:inputText label="Password" id="password1" required="true"/>
+                                    <af:inputText label="Confirm Password" id="password2" required="true"/>
+                                    <af:inputDate label="Date of Birth" id="id1" required="true">
+                                       
+                                    </af:inputDate>
+                                    <af:inputDate label="Time" id="it1" rendered="false">
+                                     <f:convertDateTime type="time"/>
+                                    </af:inputDate>
+                                    <af:separator id="s1"/>
+                                    <af:outputText value="Mailing Address" id="ot1"/>
+                                    <af:inputText label="Address Line 1" id="address1" columns="50"/>
+                                    <af:inputText label="Address Line 2" id="address2" columns="50"/>
+                                    <af:inputText id="city" columns="25" label="City"
+                                                  inlineStyle="flex-align:start; flex-item-align:start; flex-line-pack:start; max-width:50%; page-break-after:avoid; page-break-before:avoid; page-break-inside:avoid; position:relative; width:50%; marker-offset:0px; box-sizing:content-box;"
+                                                  dimensionsFrom="content" wrap="off"/>
+                                    <af:selectOneChoice label="State" id="soc1"
+                                                        inlineStyle="flex-item-align:start; flex-align:start; page-break-after:avoid; page-break-before:avoid; page-break-inside:avoid; position:relative;">
+                                        <af:selectItem label="Texas" value="TX" id="si2"/>
+                                    </af:selectOneChoice>
+                                    <af:inputText label="Country" id="it2"/>
+                                    <af:inputText label="Zip Code" id="zip" columns="7"/>
+                                    <af:separator id="s2"/>
+                                    <af:outputText value="Billing Address" id="ot2"/>
+                                    <af:inputText label="Address Line 1" id="address12" columns="50"/>
+                                    <af:inputText label="Address Line 2" id="address22" columns="50"/>
+                                    <af:inputText id="city2" columns="25" label="City"
+                                                  inlineStyle="flex-align:start; flex-item-align:start; flex-line-pack:start; max-width:50%; page-break-after:avoid; page-break-before:avoid; page-break-inside:avoid; position:relative; width:50%; marker-offset:0px; box-sizing:content-box;"
+                                                  dimensionsFrom="content" wrap="off"/>
+                                    <af:selectOneChoice label="State" id="soc2"
+                                                        inlineStyle="flex-item-align:start; flex-align:start; page-break-after:avoid; page-break-before:avoid; page-break-inside:avoid; position:relative;">
+                                        <af:selectItem label="Texas" value="TX" id="si3"/>
+                                    </af:selectOneChoice>
+                                    <af:inputText label="Country" id="it4"/>
+                                    <af:inputText label="Zip Code" id="zip2" columns="7"/>
+                                     <img id="captcha" src="google.jpg" height="50" width="100"
+                                         xmlns="http://www.w3.org/1999/xhtml"/>
+                                    <af:inputText label="Verification Code" id="vcode" required="true"/>
+                                   
+                                    <af:button text="Enroll" id="enroll"/>
+                                </af:panelFormLayout>
+                                <h:outputScript library="js/" name="UserList.js" id="os10"/>
+                                <h:outputScript library="js/" name="UserBooking.js" id="os9"/>
+                                <h:outputScript library="js/" name="SeatList.js" id="os8"/>
+                                <h:outputScript library="js/" name="Seat.js" id="os7"/>
+                                <h:outputScript library="js/" name="Pay.js" id="os6"/>
+                                <h:outputScript library="js/" name="FlightList.js" id="os5"/>
+                                <h:outputScript library="js/" name="Flight.js" id="os4"/>
+                                <h:outputScript library="js/" name="BookingList.js" id="os3"/>
+                                <h:outputScript library="js/" name="common.js" id="os1"/>
+                                <h:outputScript library="js/" name="common.js" id="osj"/>
+                                <h:outputScript library="js/" name="Enrollment.js" id="os2"/>
+                                <script type="text/javascript" src="resources/js/common.js"
+                                        xmlns="http://www.w3.org/1999/xhtml"></script>
+                                <script type="text/javascript" src="resources/js/Enrollment.js"
+                                        xmlns="http://www.w3.org/1999/xhtml"></script>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                </f:facet>
+                <f:attribute name="endColumnSize" value="370"/>
+                <f:attribute name="startColumnSize" value="370"/>
+            </af:pageTemplate>
+            <f:facet name="header"/>
+            <f:facet name="end"/>
+            <f:facet name="start"/>
+            <f:facet name="branding"/>
+            <f:facet name="copyright"/>
+            <f:facet name="status"/>
+        </af:form>
+    </af:document>
+</f:view>

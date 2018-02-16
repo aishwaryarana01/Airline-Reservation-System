@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="reserve_seat.jsf" id="d1">
+        <af:form id="f1">
+        <div style="text-align:center;">
+                <h4>Please enter your booking number to reserve seat </h4>
+        </div>
+        <table style="margin:auto;border-spacing:20px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <af:inputText label="Booking#" id="txt-bcn" columns="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="float: right; position: relative; left: 80px;">
+                        <af:button text="Submit" id="btn-search" iconPosition="bottom" type="default"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <script type="text/javascript" src="resources/js/reserveseat.js" xmlns="http://www.w3.org/1999/xhtml">
+            </script>
+        </af:form>
+    </af:document>
+</f:view>

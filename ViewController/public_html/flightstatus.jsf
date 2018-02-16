@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:h="http://java.sun.com/jsf/html">
+    <af:document title="flightstatus.jsf" id="d1">
+        <af:form id="fs">
+            <div style="text-decoration:underline; text-align:center;">
+                <h3> Track Flight Status</h3>
+            </div>
+           <!-- <af:panelFormLayout id="pfl1">-->
+                <table id="fstable" style="margin:auto;border-spacing:10px;">
+                    <tbody>
+                        <tr >
+                            <td>
+                                <af:inputText label="Flight Number" id="fltNum" columns="30"/>
+                            </td>
+                            <td style="padding-left:10px; ">OR
+                            </td>
+                            <td style="padding-left:20px; ">
+                               <af:inputText label="From" id="source" styleClass="txtBox" columns="30" />
+                            </td>
+                        </tr>
+                        <tr style="float: right; position: relative; left: 303px;">
+                            <td colspan="3" >
+                                <af:inputText label="TO" id="dest" columns="30"/>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <af:inputDate label="Departure Date" id="deptDate"/>
+                            </td>
+                        </tr>
+                        <tr style="float: right; position: relative; left: 300px;">
+                            <td>
+                                <af:button text="Track Flight" id="btnSubmit"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            <script type="text/javascript" src="resources/js/BookingList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/FlightList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/Pay.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/Seat.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/SeatList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/UserBooking.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/UserList.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+            <script type="text/javascript" src="resources/js/flightstatus.js" xmlns="http://www.w3.org/1999/xhtml">
+                </script>
+            <!--</af:panelFormLayout>-->
+        </af:form>
+    
+    </af:document>
+</f:view>
